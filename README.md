@@ -1,2 +1,1 @@
-# Spotify-clone-new
-a clone of the music streaming website
+Spotify Clone is a web-based music player built using HTML, CSS, and JavaScript. It mimics Spotify's core features, allowing users to browse and play songs, create playlists, and control playback with an intuitive interface. Enjoy a sleek design, real-time music streaming, and a seamless user experience!
