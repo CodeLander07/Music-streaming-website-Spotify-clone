@@ -3,152 +3,675 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Songtify-a music streaming website by S&D Tech service</title>
+    <title>Popular Songs Player - Curated Music Experience</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/android-chrome-512x512.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Just an image -->
-<!-- <nav class="navbar navbar-light" style="background-color: rgb(35, 35, 35);">
-    <a class="navbar-brand" href="https://mayurnikumbh07.netlify.app/">
-      <img src="assets/android-chrome-512x512.png" width="30" height="30" alt="" style="margin:0 10px;">
-    </a>
-  </nav> -->
     <div class="main">
-        <div class="sidebar">
-            <div class="nav">
-                <div class="nav-option" style="opacity: 1;">
-                    <i class="fa-solid fa-house"></i>
-                    <a href="#">Home</a>
-                    <div class="nav-option">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <a href="#">Search</a>
-                    </div>
-                </div>
-            </div>
-            <div class="library">
-                <div class="option ">
-                    <div class="lib-option nav-option" >
-                    <img src="assets/library_icon.png" alt="">
-                    <a href="#">Your Liberary</a>
-                </div> 
-                    <div class="icons">
-                        <i class="fa-solid fa-plus"></i>
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                </div>
-                <div class="lib-box"> 
-                    <div class="box">
-                        <p class="box-p1">Create your first playlist</p>
-                        <p class="box-p2">Its easy we will help you</p>
-                        <button class="badge">Create Playlist</button>
-                    </div>
-                    <div class="box">
-                        <p class="box-p1">Lets find some podcast to follow</p>
-                        <p class="box-p2">Keep you updated on episodes</p>
-                        <button class="badge">Browse Podcast</button>
-                    </div>
-                    
-                </div>
-            </div>
-        </div> 
         <div class="main-content">
             <div class="sticky-nav">
-                <div class=sticky-nav-icons">
-                <a href="https://www.linkedin.com/in/mayur-nikumbh/"><img src="assets/android-chrome-512x512.png" alt="" class="logo"></a>
-                <img src="assets/backward_icon.png" alt="" class="hide">
-                <img src="assets/forward_icon.png" alt="" class="hide"></div>
+                <div class="sticky-nav-icons">
+                    <img src="assets/android-chrome-512x512.png" alt="" class="logo">
+                    <h2 class="nav-title">Popular Songs Player</h2>
+                </div>
                 <div class="sticky-nav-options">
-                <a href="https://www.linkedin.com/in/mayur-nikumbh/"><button class="badge nav-btn hide">Explore Premium</button></a>
-                <a href="https://www.linkedin.com/in/mayur-nikumbh/"><button class="badge nav-btn dark-badge"><i class="fa-regular fa-circle-down" style="margin: 0 5px; "></i>Install App</button></a>
-                <a href="https://www.linkedin.com/in/mayur-nikumbh/"><i class="fa-regular fa-user user"></i></a>
-            </div>
+                    <button class="badge nav-btn">100+ Popular Songs</button>
+                    <i class="fa-regular fa-user user"></i>
+                </div>
             </div>
             
-        <h2>Recently played</h2>
-        <div class="card-container">
-            <div class="card">
-                <img src="assets/card1img.jpeg" alt="" class="card-img">
-                <p class="card-title">Top 50 - Global</p>
-                <p class="card-info"> Your daily updates of most played trackes....</p>
-            </div>
-        </div>
-        
-        <h2>Tending now near you</h2>
-        <div class="card-container">
-            <a href="https://youtu.be/0Iu5kQi8lns?si=d2tjnnakCvXQ93G-"><div class="card">
-                <img src="assets/card2img.jpeg" alt="" class="card-img"></a>
-                <p class="card-title">Mahiye jinna Sona</p>
-                <p class="card-info"> Your daily updates of most played trackes....</p>
-            </div>
-            <div class="card">
-                <a href="https://youtu.be/iSrWbYn69XQ?si=qABKXw2O6PtVpevT"><img src="assets/card3img.jpeg" alt="" class="card-img"></a>
-                <p class="card-title">Mere Pass Tum Ho</p>
-                <p class="card-info">Mere Paas Tum Ho OST by Rahat Fateh Ali Khan - Karaoke Lyrics on Smule ...</p>
-            </div>
-            <div class="card">
-                <a href="https://youtu.be/3wDiqlTNlfQ?si=1-t36TFl06n63z1Y"><img src="assets/card4img.jpeg" alt="" class="card-img"></a>
-                <p class="card-title">Naa Ready</p>
-                <p class="card-info">In the smashing vocals of #ThalapathyVijay here comes the most -awaited</p>
-            </div>
-            <div class="card">
-            <a href="https://youtu.be/XO8wew38VM8?si=oG-bLF5LmRgtJOBY"><img src="assets/Card8.jpeg" alt="" class="card-img"></a> 
-                <p class="card-title">Millinaire</p>
-                <p class="card-info">Millionaire Song from the GLORY album is voiced by famous singer Yo Yo Honey Singh...</p>
-            </div>
-            <div class="card">
-                <a href="https://www.youtube.com/watch?v=1bvYHkQxWmg&pp=ygUGbWFraG5h"><img src="assets/Card7.jpeg" alt="" class="card-img"></a>
-                <p class="card-title">Makhna</p>
-                <p class="card-info">Presenting the full video song of Yo Yo Honey Singh comeback video MAKHNA....</p>
-            </div>
-        </div>
-        <h2>Fearured charts</h2>
-        <div class="card-container">
-            <div class="card">
-                <img src="assets/card5img.jpeg" alt="" class="card-img">
-                <p class="card-title">Top Songs - Global</p>
-                <p class="card-info"> Your daily updates of most played trackes....</p>
-            </div>
-            <div class="card">
-                <img src="assets/card6img.jpeg" alt="" class="card-img">
-                <p class="card-title">Top Songs-India</p>
-                <p class="card-info"> Your daily updates of most played trackes....</p>
-            </div>
-            <div class="card">
-                <img src="assets/card1img.jpeg" alt="" class="card-img">
-                <p class="card-title">Top 50 - Global</p>
-                <p class="card-info"> Your daily updates of most played trackes....</p>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="line"></div>
-        </div>
-        </div>
-    <div class="music">
-        <div class="music-player">
-            <div class="album"></div>
-            <div class="player">
-                <div class="player-controls">
-                    <img src="assets/player_icon1.png" alt="" class="Player-control-icons">
-                    <img src="assets/player_icon2.png" alt="" class="Player-control-icons">
-                    <img src="assets/player_icon3.png" alt="" class="Player-control-icons" style="opacity: 1; height: 2rem;">
-                    <img src="assets/player_icon4.png" alt="" class="Player-control-icons">
-                    <img src="assets/player_icon5.png" alt="" class="Player-control-icons">
+            <h1 class="main-title">Popular Songs Player</h1>
+            <p class="subtitle">Discover 100+ most loved tracks right now - Click to watch on YouTube</p>
+            
+            <h2>🔥 Trending Now</h2>
+            <div class="card-container">
+                <div class="card song-card" data-song="1">
+                    <img src="assets/card1img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Blinding Lights</p>
+                    <p class="card-info">The Weeknd • After Hours</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
                 </div>
-                <div class="player-bar">
-                    <span class="curr-time">00:00</span>
-                    <input type="range" min="0" max="100" class="progress-bar">
-                    <span class="curr-total">3:33</span>
+                <div class="card song-card" data-song="2">
+                    <img src="assets/card2img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Shape of You</p>
+                    <p class="card-info">Ed Sheeran • ÷ (Divide)</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="3">
+                    <img src="assets/card3img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Bad Habits</p>
+                    <p class="card-info">Ed Sheeran • = (Equals)</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="4">
+                    <img src="assets/card4img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Levitating</p>
+                    <p class="card-info">Dua Lipa • Future Nostalgia</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="5">
+                    <img src="assets/Card8.jpeg" alt="" class="card-img">
+                    <p class="card-title">Stay</p>
+                    <p class="card-info">The Kid LAROI, Justin Bieber</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="6">
+                    <img src="assets/Card7.jpeg" alt="" class="card-img">
+                    <p class="card-title">Good 4 U</p>
+                    <p class="card-info">Olivia Rodrigo • SOUR</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="7">
+                    <img src="assets/card1img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Anti-Hero</p>
+                    <p class="card-info">Taylor Swift • Midnights</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="8">
+                    <img src="assets/card2img.jpeg" alt="" class="card-img">
+                    <p class="card-title">As It Was</p>
+                    <p class="card-info">Harry Styles • Harry's House</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="9">
+                    <img src="assets/card3img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Flowers</p>
+                    <p class="card-info">Miley Cyrus • Endless Summer Vacation</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="10">
+                    <img src="assets/card4img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Unholy</p>
+                    <p class="card-info">Sam Smith ft. Kim Petras • Gloria</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
                 </div>
             </div>
-            <div class="controls"></div>
-        
+            
+            <h2>🎵 Pop Hits</h2>
+            <div class="card-container">
+                <div class="card song-card" data-song="11">
+                    <img src="assets/card5img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Watermelon Sugar</p>
+                    <p class="card-info">Harry Styles • Fine Line</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="12">
+                    <img src="assets/card6img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Shake It Off</p>
+                    <p class="card-info">Taylor Swift • 1989</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="13">
+                    <img src="assets/card7.jpeg" alt="" class="card-img">
+                    <p class="card-title">Uptown Funk</p>
+                    <p class="card-info">Mark Ronson ft. Bruno Mars • Uptown Special</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="14">
+                    <img src="assets/card8.jpeg" alt="" class="card-img">
+                    <p class="card-title">Sunflower</p>
+                    <p class="card-info">Post Malone, Swae Lee • Spider-Verse</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="15">
+                    <img src="assets/card1img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Driver's License</p>
+                    <p class="card-info">Olivia Rodrigo • SOUR</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="16">
+                    <img src="assets/card2img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Positions</p>
+                    <p class="card-info">Ariana Grande • Positions</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="17">
+                    <img src="assets/card3img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Deja Vu</p>
+                    <p class="card-info">Olivia Rodrigo • SOUR</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="18">
+                    <img src="assets/card4img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Peaches</p>
+                    <p class="card-info">Justin Bieber ft. Daniel Caesar, Giveon • Justice</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="19">
+                    <img src="assets/card5img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Save Your Tears</p>
+                    <p class="card-info">The Weeknd • After Hours</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="20">
+                    <img src="assets/card6img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Montero (Call Me By Your Name)</p>
+                    <p class="card-info">Lil Nas X • Montero</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+            </div>
+            
+            <h2>🎤 Hip-Hop & R&B</h2>
+            <div class="card-container">
+                <div class="card song-card" data-song="21">
+                    <img src="assets/card7.jpeg" alt="" class="card-img">
+                    <p class="card-title">God's Plan</p>
+                    <p class="card-info">Drake • Scorpion</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="22">
+                    <img src="assets/card8.jpeg" alt="" class="card-img">
+                    <p class="card-title">Lucid Dreams</p>
+                    <p class="card-info">Juice WRLD • Goodbye & Good Riddance</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="23">
+                    <img src="assets/card1img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Sicko Mode</p>
+                    <p class="card-info">Travis Scott • Astroworld</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="24">
+                    <img src="assets/card2img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Old Town Road</p>
+                    <p class="card-info">Lil Nas X ft. Billy Ray Cyrus • 7 EP</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="25">
+                    <img src="assets/card3img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Rockstar</p>
+                    <p class="card-info">Post Malone ft. 21 Savage • Beerbongs & Bentleys</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="26">
+                    <img src="assets/card4img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Circles</p>
+                    <p class="card-info">Post Malone • Hollywood's Bleeding</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="27">
+                    <img src="assets/card5img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Lose Yourself</p>
+                    <p class="card-info">Eminem • 8 Mile Soundtrack</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="28">
+                    <img src="assets/card6img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Hotline Bling</p>
+                    <p class="card-info">Drake • Views</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="29">
+                    <img src="assets/card7.jpeg" alt="" class="card-img">
+                    <p class="card-title">HUMBLE.</p>
+                    <p class="card-info">Kendrick Lamar • DAMN.</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="30">
+                    <img src="assets/card8.jpeg" alt="" class="card-img">
+                    <p class="card-title">Without Me</p>
+                    <p class="card-info">Halsey • Manic</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+            </div>
+            
+            <h2>🎸 Rock & Alternative</h2>
+            <div class="card-container">
+                <div class="card song-card" data-song="31">
+                    <img src="assets/card1img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Bohemian Rhapsody</p>
+                    <p class="card-info">Queen • A Night at the Opera</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="32">
+                    <img src="assets/card2img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Believer</p>
+                    <p class="card-info">Imagine Dragons • Evolve</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="33">
+                    <img src="assets/card3img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Thunder</p>
+                    <p class="card-info">Imagine Dragons • Evolve</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="34">
+                    <img src="assets/card4img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Radioactive</p>
+                    <p class="card-info">Imagine Dragons • Night Visions</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="35">
+                    <img src="assets/card5img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Don't Stop Believin'</p>
+                    <p class="card-info">Journey • Escape</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="36">
+                    <img src="assets/card6img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Sweet Child O' Mine</p>
+                    <p class="card-info">Guns N' Roses • Appetite for Destruction</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="37">
+                    <img src="assets/card7.jpeg" alt="" class="card-img">
+                    <p class="card-title">Smells Like Teen Spirit</p>
+                    <p class="card-info">Nirvana • Nevermind</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="38">
+                    <img src="assets/card8.jpeg" alt="" class="card-img">
+                    <p class="card-title">Counting Stars</p>
+                    <p class="card-info">OneRepublic • Native</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="39">
+                    <img src="assets/card1img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Somebody That I Used to Know</p>
+                    <p class="card-info">Gotye ft. Kimbra • Making Mirrors</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="40">
+                    <img src="assets/card2img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Mr. Brightside</p>
+                    <p class="card-info">The Killers • Hot Fuss</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+            </div>
+            
+            <h2>🎶 All-Time Classics</h2>
+            <div class="card-container">
+                <div class="card song-card" data-song="41">
+                    <img src="assets/card3img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Imagine</p>
+                    <p class="card-info">John Lennon • Imagine</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="42">
+                    <img src="assets/card4img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Billie Jean</p>
+                    <p class="card-info">Michael Jackson • Thriller</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="43">
+                    <img src="assets/card5img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Beat It</p>
+                    <p class="card-info">Michael Jackson • Thriller</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="44">
+                    <img src="assets/card6img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Thriller</p>
+                    <p class="card-info">Michael Jackson • Thriller</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="45">
+                    <img src="assets/card7.jpeg" alt="" class="card-img">
+                    <p class="card-title">Hotel California</p>
+                    <p class="card-info">Eagles • Hotel California</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="46">
+                    <img src="assets/card8.jpeg" alt="" class="card-img">
+                    <p class="card-title">Stairway to Heaven</p>
+                    <p class="card-info">Led Zeppelin • Led Zeppelin IV</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="47">
+                    <img src="assets/card1img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Yesterday</p>
+                    <p class="card-info">The Beatles • Help!</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="48">
+                    <img src="assets/card2img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Hey Jude</p>
+                    <p class="card-info">The Beatles • Hey Jude</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="49">
+                    <img src="assets/card3img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Let It Be</p>
+                    <p class="card-info">The Beatles • Let It Be</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="50">
+                    <img src="assets/card4img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Purple Haze</p>
+                    <p class="card-info">Jimi Hendrix • Are You Experienced</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+            </div>
+            
+            <h2>🌟 Modern Hits</h2>
+            <div class="card-container">
+                <div class="card song-card" data-song="51">
+                    <img src="assets/card5img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Heat Waves</p>
+                    <p class="card-info">Glass Animals • Dreamland</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="52">
+                    <img src="assets/card6img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Shivers</p>
+                    <p class="card-info">Ed Sheeran • = (Equals)</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="53">
+                    <img src="assets/card7.jpeg" alt="" class="card-img">
+                    <p class="card-title">Industry Baby</p>
+                    <p class="card-info">Lil Nas X, Jack Harlow • Montero</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="54">
+                    <img src="assets/card8.jpeg" alt="" class="card-img">
+                    <p class="card-title">Cruel Summer</p>
+                    <p class="card-info">Taylor Swift • Lover</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="55">
+                    <img src="assets/card1img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Watermelon Sugar</p>
+                    <p class="card-info">Harry Styles • Fine Line</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="56">
+                    <img src="assets/card2img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Adore You</p>
+                    <p class="card-info">Harry Styles • Fine Line</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="57">
+                    <img src="assets/card3img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Cardigan</p>
+                    <p class="card-info">Taylor Swift • Folklore</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="58">
+                    <img src="assets/card4img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Willow</p>
+                    <p class="card-info">Taylor Swift • Evermore</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="59">
+                    <img src="assets/card5img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Mood</p>
+                    <p class="card-info">24kGoldn ft. iann dior • El Dorado</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="60">
+                    <img src="assets/card6img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Dynamite</p>
+                    <p class="card-info">BTS • BE</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+            </div>
+            
+            <h2>🎵 More Great Songs</h2>
+            <div class="card-container">
+                <div class="card song-card" data-song="61">
+                    <img src="assets/card7.jpeg" alt="" class="card-img">
+                    <p class="card-title">Butter</p>
+                    <p class="card-info">BTS • Butter</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="62">
+                    <img src="assets/card8.jpeg" alt="" class="card-img">
+                    <p class="card-title">Permission to Dance</p>
+                    <p class="card-info">BTS • Permission to Dance</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="63">
+                    <img src="assets/card1img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Thank U, Next</p>
+                    <p class="card-info">Ariana Grande • Thank U, Next</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="64">
+                    <img src="assets/card2img.jpeg" alt="" class="card-img">
+                    <p class="card-title">7 Rings</p>
+                    <p class="card-info">Ariana Grande • Thank U, Next</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="65">
+                    <img src="assets/card3img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Shallow</p>
+                    <p class="card-info">Lady Gaga, Bradley Cooper • A Star Is Born</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="66">
+                    <img src="assets/card4img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Bad Guy</p>
+                    <p class="card-info">Billie Eilish • When We All Fall Asleep</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="67">
+                    <img src="assets/card5img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Lovely</p>
+                    <p class="card-info">Billie Eilish, Khalid • 13 Reasons Why</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="68">
+                    <img src="assets/card6img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Therefore I Am</p>
+                    <p class="card-info">Billie Eilish • Happier Than Ever</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="69">
+                    <img src="assets/card7.jpeg" alt="" class="card-img">
+                    <p class="card-title">Happier Than Ever</p>
+                    <p class="card-info">Billie Eilish • Happier Than Ever</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="70">
+                    <img src="assets/card8.jpeg" alt="" class="card-img">
+                    <p class="card-title">My Universe</p>
+                    <p class="card-info">Coldplay, BTS • Music of the Spheres</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+            </div>
+            
+            <h2>🎸 Rock Legends</h2>
+            <div class="card-container">
+                <div class="card song-card" data-song="71">
+                    <img src="assets/card1img.jpeg" alt="" class="card-img">
+                    <p class="card-title">We Will Rock You</p>
+                    <p class="card-info">Queen • News of the World</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="72">
+                    <img src="assets/card2img.jpeg" alt="" class="card-img">
+                    <p class="card-title">We Are the Champions</p>
+                    <p class="card-info">Queen • News of the World</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="73">
+                    <img src="assets/card3img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Another One Bites the Dust</p>
+                    <p class="card-info">Queen • The Game</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="74">
+                    <img src="assets/card4img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Thunderstruck</p>
+                    <p class="card-info">AC/DC • The Razors Edge</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="75">
+                    <img src="assets/card5img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Back in Black</p>
+                    <p class="card-info">AC/DC • Back in Black</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="76">
+                    <img src="assets/card6img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Highway to Hell</p>
+                    <p class="card-info">AC/DC • Highway to Hell</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="77">
+                    <img src="assets/card7.jpeg" alt="" class="card-img">
+                    <p class="card-title">Enter Sandman</p>
+                    <p class="card-info">Metallica • Metallica</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="78">
+                    <img src="assets/card8.jpeg" alt="" class="card-img">
+                    <p class="card-title">Nothing Else Matters</p>
+                    <p class="card-info">Metallica • Metallica</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="79">
+                    <img src="assets/card1img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Master of Puppets</p>
+                    <p class="card-info">Metallica • Master of Puppets</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="80">
+                    <img src="assets/card2img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Livin' on a Prayer</p>
+                    <p class="card-info">Bon Jovi • Slippery When Wet</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+            </div>
+            
+            <h2>🎤 Final Mix</h2>
+            <div class="card-container">
+                <div class="card song-card" data-song="81">
+                    <img src="assets/card3img.jpeg" alt="" class="card-img">
+                    <p class="card-title">You Belong With Me</p>
+                    <p class="card-info">Taylor Swift • Fearless</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="82">
+                    <img src="assets/card4img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Love Story</p>
+                    <p class="card-info">Taylor Swift • Fearless</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="83">
+                    <img src="assets/card5img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Blank Space</p>
+                    <p class="card-info">Taylor Swift • 1989</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="84">
+                    <img src="assets/card6img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Rolling in the Deep</p>
+                    <p class="card-info">Adele • 21</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="85">
+                    <img src="assets/card7.jpeg" alt="" class="card-img">
+                    <p class="card-title">Someone Like You</p>
+                    <p class="card-info">Adele • 21</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="86">
+                    <img src="assets/card8.jpeg" alt="" class="card-img">
+                    <p class="card-title">Hello</p>
+                    <p class="card-info">Adele • 25</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="87">
+                    <img src="assets/card1img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Perfect</p>
+                    <p class="card-info">Ed Sheeran • ÷ (Divide)</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="88">
+                    <img src="assets/card2img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Thinking Out Loud</p>
+                    <p class="card-info">Ed Sheeran • x (Multiply)</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="89">
+                    <img src="assets/card3img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Castle on the Hill</p>
+                    <p class="card-info">Ed Sheeran • ÷ (Divide)</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="90">
+                    <img src="assets/card4img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Photograph</p>
+                    <p class="card-info">Ed Sheeran • x (Multiply)</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="91">
+                    <img src="assets/card5img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Roar</p>
+                    <p class="card-info">Katy Perry • Prism</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="92">
+                    <img src="assets/card6img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Firework</p>
+                    <p class="card-info">Katy Perry • Teenage Dream</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="93">
+                    <img src="assets/card7.jpeg" alt="" class="card-img">
+                    <p class="card-title">Dark Horse</p>
+                    <p class="card-info">Katy Perry ft. Juicy J • Prism</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="94">
+                    <img src="assets/card8.jpeg" alt="" class="card-img">
+                    <p class="card-title">California Gurls</p>
+                    <p class="card-info">Katy Perry ft. Snoop Dogg • Teenage Dream</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="95">
+                    <img src="assets/card1img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Stressed Out</p>
+                    <p class="card-info">Twenty One Pilots • Blurryface</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="96">
+                    <img src="assets/card2img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Heathens</p>
+                    <p class="card-info">Twenty One Pilots • Suicide Squad</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="97">
+                    <img src="assets/card3img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Ride</p>
+                    <p class="card-info">Twenty One Pilots • Blurryface</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="98">
+                    <img src="assets/card4img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Can't Stop the Feeling!</p>
+                    <p class="card-info">Justin Timberlake • Trolls</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="99">
+                    <img src="assets/card5img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Senorita</p>
+                    <p class="card-info">Shawn Mendes, Camila Cabello • Senorita</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="card song-card" data-song="100">
+                    <img src="assets/card6img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Stitches</p>
+                    <p class="card-info">Shawn Mendes • Handwritten</p>
+                    <div class="youtube-btn"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <div class="line"></div>
+                <p class="footer-text">🎵 100 Popular Songs Collection - Click on any song to watch on YouTube 🎵</p>
+                <p class="footer-stats">Featuring hits from Pop, Rock, Hip-Hop, R&B, and Classic artists</p>
+            </div>
         </div>
-
     </div>
+    
     <script src="https://kit.fontawesome.com/97ecc68096.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>

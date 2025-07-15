@@ -5,14 +5,29 @@
     color: white;
     overflow: hidden;
 }
-body{
-    background-color: black;
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #121212;
+    color: #ffffff;
+    overflow-x: hidden;
 }
+
 .main{
     display: flex;
     height: 100vh;
     padding: 0.5rem;
 }
+
+.main-content{
+    flex: 1;
+    background-color: #121212;
+    width: 100%;
+    border-radius: 1rem;
+    overflow-y: auto;
+    padding: 0 1.5rem;
+}
+
 .sidebar{
     width: 340px;
     border-radius:1rem ;
@@ -21,14 +36,6 @@ body{
 }
 .content{
     background-color: blue;
-}
-.main-content{
-    flex: 1;
-    border-radius: 1rem;
-    overflow: auto;
-    background-color: #121212;
-    padding: 0 1.5rem;
-    
 }
 .music{
     background-color: rgb(0, 0, 0);
@@ -135,22 +142,40 @@ a{
     top: 0;
     background-color: #121212;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem 0.5rem;
+    justify-content: space-between;
+    padding: 1rem 0;
     z-index: 10;
+    border-bottom: 1px solid #333;
+    margin-bottom: 1rem;
 }
 .sticky-nav-icons{
-    margin:  0 0.75rem;
-    
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.logo{
+    width: 2rem;
+    height: 2rem;
+}
+.nav-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1db954;
+    margin: 0;
 }
 .sticky-nav-options{
     display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 1rem;
 }
 .nav-btn{
     margin-right: 1rem;
+    background-color: #1db954;
+}
+.nav-btn:hover {
+    background-color: #1ed760;
+    transform: scale(1.05);
 }
 .dark-badge{
     background-color: #000000;
@@ -167,35 +192,47 @@ a{
     transition: all 0.6s ease;
 }
 .card-container{
-    display: flex;
-    margin: 1rem 0;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
 }
 .card-img{
     width: 100%;
+    height: 180px;
+    object-fit: cover;
     border-radius: 0.5rem;
+    margin-bottom: 1rem;
 }
 .card-title{
     font-weight: 600;
-    margin: 0.5rem 0;
+    margin: 0.5rem 0 0.2rem 0;
+    font-size: 0.9rem;
+    color: #ffffff;
 }
 .card-info{
-    font-size: 0.65rem;
-    opacity: 0.8;
-    margin: 0.5rem 0;
+    font-size: 0.75rem;
+    opacity: 0.7;
+    margin: 0;
+    line-height: 1.3;
 }
 
 .footer{
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid #333;
+    margin-top: 2rem;
 }
 .line{
-    width: 90%;
-    height: 50%;
-    border-top: 1px solid white;
-    opacity: 0.4;
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+    margin-bottom: 1rem;
+}
+.footer-text{
+    opacity: 0.6;
+    font-size: 0.9rem;
+    margin: 0;
 }
 .card:hover{
     transform: translateY(-10px);
@@ -339,4 +376,290 @@ a{
         background-color: #121212;
     }
 }
+
+/* New styles for Popular Songs Player */
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 1rem 0 0.5rem 0;
+    background: linear-gradient(135deg, #1db954, #1ed760);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    margin-bottom: 2rem;
+}
+
+.song-card {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.song-card:hover {
+    background-color: #282828;
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(29, 185, 84, 0.3);
+}
+
+.play-btn {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: #1db954;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.song-card:hover .play-btn {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.play-btn i {
+    color: black;
+    font-size: 1.2rem;
+    margin-left: 0.2rem;
+}
+
+.play-btn:hover {
+    background-color: #1ed760;
+    transform: scale(1.2);
+}
+
+/* Enhanced music player */
+.current-song-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+}
+
+.current-song-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.current-song-title {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+}
+
+.current-song-artist {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.album {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 1rem;
+    gap: 1rem;
+}
+
+.like-btn, .volume-btn {
+    font-size: 1.2rem;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.like-btn:hover, .volume-btn:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.like-btn.active {
+    color: #1db954;
+    opacity: 1;
+}
+
+.player-control-icon {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.player-control-icon:hover {
+    transform: scale(1.1);
+}
+
+.progress-bar::-webkit-slider-thumb {
+    background-color: #1db954;
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    margin-top: -6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.progress-bar::-webkit-slider-thumb:hover {
+    background-color: #1ed760;
+    transform: scale(1.2);
+}
+
+/* Enhanced card styling */
+.card-title {
+    font-weight: 600;
+    margin: 0.5rem 0 0.2rem 0;
+    font-size: 0.9rem;
+}
+
+.card-info {
+    font-size: 0.7rem;
+    opacity: 0.8;
+    margin: 0;
+    line-height: 1.3;
+}
+
+/* Animation for playing state */
+.song-card.playing {
+    border: 2px solid #1db954;
+    box-shadow: 0 0 20px rgba(29, 185, 84, 0.5);
+}
+
+.song-card.playing .play-btn {
+    opacity: 1;
+    background-color: #1ed760;
+}
+
+/* Enhanced responsive design */
+@media screen and (max-width: 500px) {
+    .main-title {
+        font-size: 1.8rem;
+    }
     
+    .subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .current-song-img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .current-song-title {
+        font-size: 0.8rem;
+    }
+    
+    .current-song-artist {
+        font-size: 0.7rem;
+    }
+    
+    .play-btn {
+        width: 2.5rem;
+        height: 2.5rem;
+        bottom: 0.5rem;
+        right: 0.5rem;
+    }
+    
+    .play-btn i {
+        font-size: 1rem;
+    }
+    
+    .controls {
+        gap: 0.5rem;
+    }
+    
+    .like-btn, .volume-btn {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        padding: 0;
+    }
+    
+    .main-content {
+        padding: 0 1rem;
+    }
+    
+    .sticky-nav {
+        padding: 0.5rem 0;
+    }
+    
+    .nav-title {
+        font-size: 1rem;
+    }
+    
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .card-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+    
+    .card-img {
+        height: 150px;
+    }
+    
+    .youtube-btn {
+        width: 2.5rem;
+        height: 2.5rem;
+        bottom: 0.5rem;
+        right: 0.5rem;
+    }
+    
+    .youtube-btn i {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sticky-nav-icons {
+        gap: 0.5rem;
+    }
+    
+    .nav-title {
+        display: none;
+    }
+    
+    .main-title {
+        font-size: 1.5rem;
+    }
+    
+    .card-container {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+    
+    .card-img {
+        height: 120px;
+    }
+    
+    .card-title {
+        font-size: 0.8rem;
+    }
+    
+    .card-info {
+        font-size: 0.7rem;
+    }
+}
+
